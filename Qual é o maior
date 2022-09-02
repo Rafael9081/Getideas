@@ -1,0 +1,10 @@
+console.log ("Digite 3 números e saiba qual é o maior")
+var numero1 =Number(prompt('Digite o primeiro número'))
+var numero2 =Number(prompt('Digite o segundo número'))
+var numero3 =Number(prompt('Digite o terceiro número'))
+if ((numero1>numero2) && (numero1>numero3)) console.log('O ' + numero1 + ' é o maior')
+else 
+ if ((numero2>numero1) && (numero2>numero3)) console.log('O ' + numero2 + ' é o maior')
+else 
+if((numero3 >numero1) && (numero3>numero2)) console.log('O ' + numero3 + ' é o maior')
+else console.log('Os números são iguais ou nulos')
