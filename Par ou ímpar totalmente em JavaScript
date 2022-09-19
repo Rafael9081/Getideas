@@ -1,0 +1,22 @@
+var p1=0 /*Jogador*/
+var p2=0   /*programa*/
+var tot = 0 // total para calcular se é par ou impar
+var tot1 = 0 // total apenas para mostrar resultado ao jogador 
+var parImpar =0 /* armazena a escolha par ou impar*/
+alert('Vamos jogar Par ou Impar?')
+p1= prompt('Digite um numero entre 1 e 10')
+console.log(p1) // console apenas para verificar se o código está funcionando corretamente 
+p2= Math.floor(Math.random() * 10)
+console.log(p2)
+tot= (parseInt(p1 )+ parseInt(p2 ))% 2
+console.log (tot)
+tot1 = parseInt(p1) + parseInt(p2)
+parImpar= prompt ('Digite p para par ou i para impar')
+console.log(parImpar)
+if (parImpar == 'p') { parImpar = 'par'} else {parImpar ='impar'}
+console.log(parImpar )
+if (parImpar == 'par')
+   if (tot == 0)  {alert('Você jogou' + p1 + ' e o programa jogou' + p2 + ' deu ' + tot1 + ' você venceu')} else {alert('Você jogou' + p1 + ' e o programa jogou' + p2 + ' deu ' + tot1 +' você perdeu')}    
+else if (parImpar = 'impar')
+   if (tot !=0) {alert('Você jogou' + p1 + ' e o programa jogou' + p2 + ' deu ' + tot1 +' você venceu')} else {alert('Você jogou' + p1 + ' e o programa jogou' + p2 + ' deu ' + tot1 + 'Você perdeu')}
+   
