@@ -1,0 +1,18 @@
+var p1= 0
+var p2= 0
+var arr = ['pedra', 'papel' , 'tesoura']
+alert('Vamos jogar pedra papel e tesoura?')
+p1 = prompt ('Digite pedra , papel ou tesoura')
+p2 = randomElement = arr[Math.floor(Math.random() * arr.length)]
+alert(`Você escolheu ${p1} e o programa escolheu ${p2}`)
+if (p1 == 'pedra') 
+if (p2 == 'papel') {alert('Perdeu')}
+else if(p2 == 'tesoura') {alert('Ganhou')}
+if (p1 == 'papel')
+if  (p2 == 'pedra') {alert('Ganhou')}
+else if (p2 == 'tesoura') {alert('Perdeu')}
+if (p1 == 'tesoura') 
+if (p2 == 'papel') {alert('Ganhou')}
+else if (p2 == 'pedra') {alert('Perdeu')}
+if (p1 === p2) {alert('Empate')}
+else {alert('Você digitou errado')}
