@@ -1,0 +1,16 @@
+alert('Jogo de adivinhação ')
+alert('O programa escolheu um número aleatório de 1 a 100')
+alert('Dê seu palpite. Fique tranquilo, te diremos se o número é maior ou menor que seu palpite')
+var num_aleat = Math.floor(Math.random() * 100)
+var tentativa= 0
+var palpite= 0
+var dica = ''
+do
+{  var palpite =prompt ('Digite seu palpite entre 1 e 100' + dica)
+ tentativa ++
+ 
+  if (palpite > num_aleat) {alert(`Seu palpite é maior que o número do programa e você tem ${tentativa} tentativa(s)` )}
+   else if (palpite < num_aleat) {alert(`Seu palpite é menor que o número do programa e você tem ${tentativa} tentativa(s)`)} 
+  else if ( palpite == num_aleat) { alert(`Parabéns, você acertou o número depois de ${tentativa} tentativa(s)`)
+}
+}while(palpite!=num_aleat)
